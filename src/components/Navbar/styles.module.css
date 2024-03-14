@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 74px;
+}
+
+.tabs_box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  overflow-x: hidden;
+  position: relative;
+  max-width: 936px;
+}
+
+.arrow {
+  height: 32px;
+  width: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  
+  border: solid 1px #CACACA;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.gradient{
+  position: absolute;
+  right: 0;
+  background: linear-gradient(90deg,transparent, #fff);
+  height: 100%;
+  width: 40px;
+}

@@ -1,9 +1,15 @@
 import { FC } from 'react'
+import Navbar from '../components/Navbar/Navbar'
 
 const App: FC = () => {
   return (
     <>
-      <h1></h1>
+      <header>
+        <div className="container">
+          <Navbar />
+        </div>
+        <hr />
+      </header>
     </>
   )
 }
