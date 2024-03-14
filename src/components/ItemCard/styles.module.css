@@ -1,0 +1,61 @@
+.cardImg {
+  position: relative;
+  border-radius: 10px;
+  height: 240px;
+  width: 240px;
+  overflow: hidden;
+}
+
+.cardImg img {
+  height: 240px;
+}
+
+.shadow {
+  position: absolute;
+  height: 50px;
+  width: 240px;
+  background: linear-gradient(0deg, #000000db, transparent);
+  bottom: 0;
+}
+
+.description {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  gap: 8px;
+}
+
+.tittle {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+}
+
+.rating{
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: flex-end;
+}
+.rating span {
+  margin-left: 6px;
+}
+
+.area{
+  grid-column: 1 / 2;
+  color: var(--outline-color);
+  font-weight: 300;
+}
+
+.age {
+  color: var(--outline-color);
+  font-weight: 300;
+}
+
+.price {
+  grid-column: 1 / 2;
+}
+
+.price span {
+  color: var(--primary-color);
+}

@@ -1,0 +1,83 @@
+
+[
+  {
+    "id": 1,
+    "name": "Laser Tag Fun",
+    "rating": 4.8,
+    "guestsAge": "9-16",
+    "area": 500,
+    "price": 150,
+    "images": ["item1", "item2"],
+    "category": "Laser tag"
+  },
+  {
+    "id": 2,
+    "name": "Artistic Mastery",
+    "rating": 4.3,
+    "guestsAge": "12-18",
+    "area": 300,
+    "price": 80,
+    "images": ["item2", "item3"],
+    "category": "Master classes"
+  },
+  {
+    "id": 3,
+    "name": "Mystery Quests",
+    "rating": 4.5,
+    "guestsAge": "10-16",
+    "area": 400,
+    "price": 120,
+    "images": ["item1", "item3"],
+    "category": "Quest rooms"
+  },
+  {
+    "id": 4,
+    "name": "Creative Kids",
+    "rating": 4.6,
+    "guestsAge": "6-12",
+    "area": 250,
+    "price": 70,
+    "images": ["item1", "item2"],
+    "category": "Children's studios"
+  },
+  {
+    "id": 5,
+    "name": "Family Bistro",
+    "rating": 4.2,
+    "guestsAge": "0-99",
+    "area": 350,
+    "price": 90,
+    "images": ["item2", "item3"],
+    "category": "Cafes and restaurants with a children's room"
+  },
+  {
+    "id": 6,
+    "name": "Action Arena",
+    "rating": 4.7,
+    "guestsAge": "10-18",
+    "area": 600,
+    "price": 180,
+    "images": ["item1", "item3"],
+    "category": "Laser tag"
+  },
+  {
+    "id": 7,
+    "name": "Cooking Classes Galore",
+    "rating": 4.4,
+    "guestsAge": "8-16",
+    "area": 280,
+    "price": 75,
+    "images": ["item1", "item2"],
+    "category": "Master classes"
+  },
+  {
+    "id": 8,
+    "name": "Enchanted Escapes",
+    "rating": 4.9,
+    "guestsAge": "7-15",
+    "area": 450,
+    "price": 130,
+    "images": ["item2", "item3"],
+    "category": "Quest rooms"
+  }
+]

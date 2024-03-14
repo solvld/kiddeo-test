@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import Navbar from '../components/Navbar/Navbar'
+import ItemsList from '../components/ItemsList/ItemsList'
 
 const App: FC = () => {
   return (
@@ -10,6 +11,11 @@ const App: FC = () => {
         </div>
         <hr />
       </header>
+      <main>
+        <div className="container">
+          <ItemsList />
+        </div>
+      </main>
     </>
   )
 }
