@@ -1,3 +1,10 @@
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
 .wrapper {
   display: flex;
   align-items: center;
@@ -5,13 +12,13 @@
 }
 
 .tabs_box {
+  /* max-width: 936px; */
   display: flex;
   align-items: center;
   gap: 30px;
   list-style: none;
   overflow-x: hidden;
   position: relative;
-  max-width: 936px;
 }
 
 .arrow {
