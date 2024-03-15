@@ -6,12 +6,10 @@ import ItemCard from '../ItemCard/ItemCard'
 const ItemsList = () => {
   return (
     <main>
-      <div className="container">
-        <div className={styles.wrapper}>
-          {org.map(item => (
-            <ItemCard key={item.id} {...item} />
-          ))}
-        </div>
+      <div className={styles.wrapper}>
+        {org.map(item => (
+          <ItemCard key={item.id} {...item} />
+        ))}
       </div>
     </main>
   )

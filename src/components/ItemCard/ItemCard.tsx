@@ -6,7 +6,7 @@ import { Organization } from '../../types'
 
 const ItemCard = ({ name, rating, guestsAge, area, price }: Organization) => {
   return (
-    <article>
+    <article className={styles.item}>
       <figure className={styles.cardImg}>
         <img src={item1} alt="" />
         <div className={styles.shadow}></div>
@@ -22,7 +22,7 @@ const ItemCard = ({ name, rating, guestsAge, area, price }: Organization) => {
         <h4 className={styles.area}>{`${area} sq.m`}</h4>
 
         <h3 className={styles.price}>
-          <span>{`$${price} `}</span>person
+          <span>{`$ ${price} `}</span>person
         </h3>
       </div>
     </article>

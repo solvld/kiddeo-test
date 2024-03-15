@@ -32,12 +32,12 @@
   },
   {
     "id": 4,
-    "name": "Creative Kids",
-    "rating": 4.6,
-    "guestsAge": "6-12",
-    "area": 250,
-    "price": 70,
-    "images": ["item1", "item2"],
+    "name": "Name of the organization",
+    "rating": 4.5,
+    "guestsAge": "9-16",
+    "area": 20,
+    "price": 25,
+    "images": ["../../assets/img/item.png", "item2"],
     "category": "Children's studios"
   },
   {
