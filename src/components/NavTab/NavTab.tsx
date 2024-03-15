@@ -10,12 +10,8 @@ const NavTab = ({ icon, label }: Activity) => {
   }
   return (
     <li
-      className={styles.tab}
+      className={`${styles.tab} ${isActive ? styles.active : null}`}
       onClick={handleClick}
-      style={{
-        borderBottom: isActive ? 'solid' : 'none',
-        fontWeight: isActive ? '500' : '400',
-      }}
     >
       <img src={icon} />
       <span>{label}</span>

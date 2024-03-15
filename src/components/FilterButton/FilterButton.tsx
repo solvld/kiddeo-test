@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import styles from './styles.module.css'
-import filter from '../../assets/filter.svg'
+import filter from '../../assets/img/filter.svg'
 
 const FilterButton: FC = () => {
   return (

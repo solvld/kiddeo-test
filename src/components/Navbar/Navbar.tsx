@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { activities } from './data'
-import arrow from '../../assets/arrow.svg'
+import arrow from '../../assets/img/arrow.svg'
 import NavTab from '../NavTab/NavTab'
 
 import styles from './styles.module.css'

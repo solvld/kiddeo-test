@@ -1,7 +1,7 @@
 import React from 'react'
-import item1 from '../../assets/item.png'
+import item1 from '../../assets/img/item.png'
 import styles from './styles.module.css'
-import star from '../../assets/star.svg'
+import star from '../../assets/img/star.svg'
 import { Organization } from '../../types'
 
 const ItemCard = ({ name, rating, guestsAge, area, price }: Organization) => {

@@ -1,10 +1,10 @@
 import { Activity } from '../../types'
 
-import laser from '../../assets/laser.svg'
-import cafe from '../../assets/cafe.svg'
-import quest from '../../assets/quest.svg'
-import mask from '../../assets/mask.svg'
-import party from '../../assets/party.svg'
+import laser from '../../assets/img/laser.svg'
+import cafe from '../../assets/img/cafe.svg'
+import quest from '../../assets/img/quest.svg'
+import mask from '../../assets/img/mask.svg'
+import party from '../../assets/img/party.svg'
 
 export const activities: Activity[] = [
   { icon: laser, label: 'Laser tag' },
