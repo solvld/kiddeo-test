@@ -5,16 +5,9 @@ import ItemsList from '../components/ItemsList/ItemsList'
 const App: FC = () => {
   return (
     <>
-      <header>
-        <div className="container">
-          <Navbar />
-        </div>
-        <hr />
-      </header>
+        <Navbar />
       <main>
-        <div className="container">
-          <ItemsList />
-        </div>
+        <ItemsList />
       </main>
     </>
   )

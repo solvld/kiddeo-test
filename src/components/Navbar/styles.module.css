@@ -1,9 +1,11 @@
 .container{
   width: 100%;
-  display: flex;
+  display: inline-flex;
+  flex-shrink: 2;
   align-items: center;
-  justify-content: center;
   gap: 16px;
+  margin-left: 0 auto;
+  justify-content: center;
 }
 .wrapper {
   display: flex;
@@ -41,4 +43,24 @@
   background: linear-gradient(90deg,transparent, #fff);
   height: 100%;
   width: 40px;
+}
+
+header {
+  border-bottom: solid 1px var(--outline-color);
+  width: 100%;
+}
+
+
+@media screen and (max-width: 660px) {
+  .container {
+    margin: 0 10px;
+    gap: 4px;
+    width: calc(100vw - 45px);
+  }
+
+  .wrapper{
+    height: 60px;
+    width: 100%;
+    max-width: 660px;
+  }
 }
