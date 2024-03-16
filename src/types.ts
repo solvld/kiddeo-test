@@ -40,3 +40,7 @@ export type Filter = {
 export type AdditionalFilters = {
   [key: string]: Filter
 }
+
+export type SideBarFilters = {
+  [key: string]: AdditionalFilters
+}
