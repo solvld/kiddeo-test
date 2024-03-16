@@ -13,3 +13,30 @@ export type Organization = {
   images: string[]
   category: string
 }
+
+export type SelectOption = {
+  name: string
+  state: boolean
+}
+
+export type SelectValues = SelectOption[]
+
+export type RangeOption = {
+  min: number
+  max: number
+  from: number
+  step: number
+  state: number
+}
+
+export type RangeValues = RangeOption[]
+
+export type Filter = {
+  type: 'one_select' | 'multi_select' | 'range'
+  name: string
+  values: SelectValues | RangeValues
+}
+
+export type AdditionalFilters = {
+  [key: string]: Filter
+}
