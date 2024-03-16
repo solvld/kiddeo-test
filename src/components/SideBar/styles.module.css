@@ -1,0 +1,96 @@
+.container {
+  width: 690px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 15px #00000026;
+  margin-top: 60px;
+  position: relative;
+}
+
+.container h2 {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 14px;
+  border-bottom: solid 1px var(--outline-color);
+}
+
+.exitBtn {
+  position: absolute;
+  top: 26px;
+  left: 16px;
+  cursor: pointer;
+}
+
+.exitBtn div:first-child {
+  height: 1px;
+  width: 24px;
+  transform: rotate(45deg);
+  background-color: red;
+}
+
+.exitBtn div:last-child {
+  height: 1px;
+  width: 24px;
+  transform: rotate(-45deg);
+  background-color: red;
+}
+
+.form {
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 38px;
+}
+.form h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 16px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-top: solid 1px var(--outline-color);
+}
+
+.footer button:first-child {
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.footer button:first-child:hover {
+  color: #00000080;
+}
+
+.footer button:last-child {
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.footer button:last-child:hover {
+  background-color: #d9665b;
+}

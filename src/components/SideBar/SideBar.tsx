@@ -1,6 +1,8 @@
 import { FormEventHandler } from 'react'
 import { Filter, SideBarFilters } from '../../types'
 import FilterInputs from './FilterInputs'
+import styles from './styles.module.css'
+import PriceRangeInput from './Inputs/PriceRangeInput'
 
 const SideBar = ({ filters }: SideBarFilters) => {
   const handleSubmit: FormEventHandler<HTMLFormElement> = e => {
@@ -9,15 +11,14 @@ const SideBar = ({ filters }: SideBarFilters) => {
   }
 
   return (
-    <div>
-      <form
-        onSubmit={handleSubmit}
-        style={{ display: 'flex', flexDirection: 'column' }}
-      >
-        <div>
-          <label htmlFor="priceRange">Price</label>
-          <input type="range" name="" id="priceRange" />
-        </div>
+    <div className={styles.container}>
+      <h2>Filters</h2>
+      <div className={styles.exitBtn}>
+        <div></div>
+        <div></div>
+      </div>
+      <form onSubmit={handleSubmit} className={styles.form}>
+        <PriceRangeInput />
 
         {Object.values(filters).map(value => {
           return Object.entries(value).map((entry, index) => {
@@ -26,7 +27,7 @@ const SideBar = ({ filters }: SideBarFilters) => {
 
             return (
               <div key={index}>
-                <label htmlFor="">{label}</label>
+                <h3 htmlFor="">{label}</h3>
                 <FilterInputs
                   type={filterParams['type']}
                   values={filterParams['values']}
@@ -36,6 +37,10 @@ const SideBar = ({ filters }: SideBarFilters) => {
           })
         })}
       </form>
+      <div className={styles.footer}>
+        <button>Clear all</button>
+        <button type="submit">Show 256 place</button>
+      </div>
     </div>
   )
 }
