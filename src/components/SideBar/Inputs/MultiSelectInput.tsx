@@ -11,12 +11,12 @@ const MultiSelectInput = ({ values }: SelectValues) => {
     const value = e.target.value
     const isChecked = e.target.checked
 
-    dispatch(setMultiSelect({value, isChecked}))
+    dispatch(setMultiSelect({ value, isChecked }))
   }
   return (
     <div className={styles.container}>
-      {values.map((value: SelectOption) => (
-        <div className={styles.selectWrapper}>
+      {values.map((value: SelectOption, index: string) => (
+        <div className={styles.selectWrapper} key={index}>
           <label htmlFor={value.name}>{value.name}</label>
           <input
             type="checkbox"

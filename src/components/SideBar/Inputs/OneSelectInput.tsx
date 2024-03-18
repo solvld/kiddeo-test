@@ -14,8 +14,8 @@ const OneSelectInput = ({ values }: SelectValues) => {
 
   return (
     <div className={styles.container}>
-      {values.map((value: SelectOption) => (
-        <div className={styles.selectWrapper}>
+      {values.map((value: SelectOption, index: string) => (
+        <div className={styles.selectWrapper} key={index}>
           <label htmlFor={value.name}>{value.name}</label>
           <input
             type="radio"
