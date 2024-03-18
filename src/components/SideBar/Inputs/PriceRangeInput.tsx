@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
 import styles from './styles.module.css'
+import { useDispatch } from 'react-redux'
+import { setPrice } from '../../../features/filtersSlice'
 
 const PriceRangeInput = () => {
   const [priceValue, setPriceValue] = useState(0)
 
+  const dispatch = useDispatch()
+
   const handleMouseMove = e => {
     setPriceValue(e.target.value)
+    dispatch(setPrice(priceValue))
   }
 
   return (
