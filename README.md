@@ -1,30 +1,21 @@
-# React + TypeScript + Vite
+# Kiddeo test assigment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Выполнить адаптивную вёрстку по ссылке из раздела “рабочая область” [x]
+2. Создать копию данных (просто перенести в код), которые находятся в «входные параметры» файл categories.json [x]
+3. Использовать набор данных для генерации sidebar уже свёрстанными ранее элементами [x]
+4. Автоматизировать процесс генерации [x]
+5. Сделать фильтрацию по этому sidebar’у элементов на странице [x]
 
-Currently, two official plugins are available:
+## Technologies Used
+- TypeScript
+- React
+- React Context
+- Redux Toolkit
+- Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Running the Projects
+1. Clone the repository to your local machine.
+2. Install dependencies by running `npm install`.
+3. Start the development server with `npm run dev`.
+4. Open your browser and navigate to `http://localhost:5173/` to view the project.
