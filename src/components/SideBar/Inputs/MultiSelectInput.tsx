@@ -5,22 +5,13 @@ import { useDispatch } from 'react-redux'
 import { setMultiSelect } from '../../../features/filtersSlice'
 
 const MultiSelectInput = ({ values }: SelectValues) => {
-  const [selectedValues, setSelectedValues] = useState([])
   const dispatch = useDispatch()
 
   const handleChange = e => {
     const value = e.target.value
     const isChecked = e.target.checked
 
-    let updatedValues = []
-
-    if (isChecked) {
-      updatedValues = [...selectedValues, value]
-    } else {
-      updatedValues = selectedValues.filter(item => item !== value)
-    }
-    setSelectedValues(updatedValues)
-    dispatch(setMultiSelect(updatedValues))
+    dispatch(setMultiSelect({value, isChecked}))
   }
   return (
     <div className={styles.container}>
