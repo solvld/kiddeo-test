@@ -4,13 +4,17 @@ import FilterInputs from './FilterInputs'
 import styles from './styles.module.css'
 import PriceRangeInput from './Inputs/PriceRangeInput'
 import { Context } from '../../app/Context'
+import useShowFilters from '../../hooks/showFilters'
 
 const SideBar = ({ filters }: SideBarFilters) => {
-  const {isActive, setIsActive} = useContext(Context)
+  const { isActive, setIsActive } = useContext(Context)
+  const message = useShowFilters()
+
   const handleSubmit: FormEventHandler<HTMLFormElement> = e => {
     e.preventDefault()
     setIsActive(false)
-    console.log('submit')
+    alert(message)
+    console.log(message)
   }
 
   return (
