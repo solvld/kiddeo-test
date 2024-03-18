@@ -33,6 +33,10 @@ body {
   margin: 10px 0;
 }
 
+main {
+  position: relative;
+}
+
 .container{
   margin: 0 36px;
   width: 100vw;
